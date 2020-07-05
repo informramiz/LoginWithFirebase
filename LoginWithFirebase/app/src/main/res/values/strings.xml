@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Login With Firebase</string>
     <string name="main_fragment_title">Login with Firebase</string>
+    <string name="login_fragment_title">Login</string>
+    <string name="main_fragment_welcome_msg">Welcome to this beautiful app</string>
+    <string name="main_fragment_login_label">Login</string>
 </resources>
