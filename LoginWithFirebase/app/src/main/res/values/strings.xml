@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Login With Firebase</string>
+    <string name="main_fragment_title">Login with Firebase</string>
+</resources>
