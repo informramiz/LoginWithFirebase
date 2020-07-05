@@ -3,7 +3,7 @@ package github.informramiz.loginwithfirebase.ui.main
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import github.informramiz.loginwithfirebase.ui.utils.Event
+import github.informramiz.loginwithfirebase.utils.Event
 
 class MainViewModel : ViewModel() {
     private val _navigateToLogin = MutableLiveData<Event<Boolean>>()

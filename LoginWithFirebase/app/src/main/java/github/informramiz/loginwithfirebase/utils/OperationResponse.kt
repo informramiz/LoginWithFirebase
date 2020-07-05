@@ -1,4 +1,4 @@
-package github.informramiz.loginwithfirebase.ui.utils
+package github.informramiz.loginwithfirebase.utils
 
 import java.lang.Exception
 
