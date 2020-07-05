@@ -19,8 +19,9 @@
             android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_fragment_welcome_msg"
+            android:text="@string/main_fragment_welcome_msg_not_logged_in"
             style="@style/TextAppearance.MaterialComponents.Headline6"
+            app:authenticationState="@{viewModel.authenticationState}"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -30,7 +31,8 @@
             style="@style/Widget.LoginWithFirebase.Button"
             android:text="@string/main_fragment_login_label"
             tools:ignore="MissingConstraints"
-            android:onClick="@{() -> viewModel.onLoginButtonClick()}"/>
+            app:authenticationState="@{viewModel.authenticationState}"
+            android:onClick="@{() -> viewModel.onLoginLogoutButtonClick()}" />
 
         <androidx.constraintlayout.helper.widget.Flow
             android:layout_width="0dp"

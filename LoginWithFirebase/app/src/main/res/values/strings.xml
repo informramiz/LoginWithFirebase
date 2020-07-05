@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">Login With Firebase</string>
+
+    <!--  MainFragment  -->
     <string name="main_fragment_title">Login with Firebase</string>
     <string name="login_fragment_title">Login</string>
-    <string name="main_fragment_welcome_msg">Welcome to this beautiful app</string>
+    <string name="main_fragment_welcome_msg_not_logged_in">Welcome to this beautiful app</string>
+    <string name="main_fragment_welcome_msg_logged_in">Awesome, you are logged in!!</string>
     <string name="main_fragment_login_label">Login</string>
+    <string name="main_fragment_logout_label">Logout</string>
 </resources>
