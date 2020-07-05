@@ -44,7 +44,7 @@ class MainFragment : Fragment() {
     }
 
     private fun registerObservers() {
-        viewModel.navigateToLogin.observe(viewLifecycleOwner, Observer {
+        viewModel.startLoginFlow.observe(viewLifecycleOwner, Observer {
             if (it.getContentIfNotHandled() == true) {
                 signInActivityLauncher.launch()
             }
