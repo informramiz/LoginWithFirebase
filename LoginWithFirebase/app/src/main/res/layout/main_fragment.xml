@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="viewModel"
+            type="github.informramiz.loginwithfirebase.ui.main.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,11 +19,30 @@
             android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MainFragment"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/main_fragment_welcome_msg"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.LoginWithFirebase.Button"
+            android:text="@string/main_fragment_login_label"
+            tools:ignore="MissingConstraints"
+            android:onClick="@{() -> viewModel.onLoginButtonClick()}"/>
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:constraint_referenced_ids="message,loginButton"
+            app:flow_maxElementsWrap="1"
+            app:flow_wrapMode="chain"
+            app:flow_verticalGap="8dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

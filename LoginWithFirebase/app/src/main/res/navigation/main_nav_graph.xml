@@ -9,5 +9,17 @@
         android:id="@+id/mainFragment"
         android:name="github.informramiz.loginwithfirebase.ui.main.MainFragment"
         android:label="@string/main_fragment_title"
-        tools:layout="@layout/main_fragment" />
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="github.informramiz.loginwithfirebase.ui.login.LoginFragment"
+        android:label="@string/login_fragment_title" />
 </navigation>

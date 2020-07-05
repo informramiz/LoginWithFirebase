@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import github.informramiz.loginwithfirebase.databinding.MainFragmentBinding
 
 class MainFragment : Fragment() {
@@ -25,5 +27,15 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewBinding.lifecycleOwner = viewLifecycleOwner
+        viewBinding.viewModel = viewModel
+        registerObservers()
+    }
+
+    private fun registerObservers() {
+        viewModel.navigateToLogin.observe(viewLifecycleOwner, Observer {
+            if (it.getContentIfNotHandled() == true) {
+                findNavController().navigate(MainFragmentDirections.actionMainFragmentToLoginFragment())
+            }
+        })
     }
 }
