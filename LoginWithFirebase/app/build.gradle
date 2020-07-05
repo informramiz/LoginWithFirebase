@@ -67,3 +67,5 @@ dependencies {
     implementation "androidx.fragment:fragment-ktx:$fragmentKtxVersion"
     implementation "androidx.activity:activity-ktx:$activity_version"
 }
+
+apply plugin: 'com.google.gms.google-services'

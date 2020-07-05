@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "882962374556",
+    "firebase_url": "https://login-sample-f213c.firebaseio.com",
+    "project_id": "login-sample-f213c",
+    "storage_bucket": "login-sample-f213c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882962374556:android:bba60c3b133269b61af259",
+        "android_client_info": {
+          "package_name": "github.informramiz.loginwithfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882962374556-9nu5k9gdscr20afa287ks4jl4vhp3v13.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "github.informramiz.loginwithfirebase",
+            "certificate_hash": "652def33b8c0473d2aad4c0834dbb057793c4af5"
+          }
+        },
+        {
+          "client_id": "882962374556-ahl20edrcs3gmbqe6kkjm7r0ge17a702.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBBJzMwAr_9sNHoBv-OtpDyMbDAbnB--4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882962374556-ahl20edrcs3gmbqe6kkjm7r0ge17a702.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
