@@ -19,7 +19,8 @@ class SignInWithFirebaseActivityContract : ActivityResultContract<Void?, Operati
         //sign-in providers we want to support
         val providers = listOf(
             AuthUI.IdpConfig.EmailBuilder().build(),
-            AuthUI.IdpConfig.GoogleBuilder().build()
+            AuthUI.IdpConfig.GoogleBuilder().build(),
+            AuthUI.IdpConfig.MicrosoftBuilder().build()
         )
         return AuthUI.getInstance().createSignInIntentBuilder()
             .setAvailableProviders(providers)
